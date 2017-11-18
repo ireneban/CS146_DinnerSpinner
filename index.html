@@ -1,117 +1,95 @@
 <!DOCTYPE html>
-<!--CS146: Team delieverable 1: html-->
-<!--Team3: Mijeong Ban, Ian Gomez, Dana McGuire, Caroline Rubino, Luke Bukowiec -->
-<!--I pledge my honor that I have abided by the Stevens Honor System.-->
 <html>
   <head>
     <meta charset="utf-8">
     <title>Dinner Spinner</title>
-<!--    <link rel="stylesheet" href="css/main.css">-->
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-
-    <!-- Header -->
     <header>
-      <h1 id="header">
-        <strong><a href="index.html"><font face=courier>Dinner Spinner</font></a></strong></h1>
-      <br>
-      <hr>
-      <nav id="nav">
-        <table align="center" cellpadding="10">
-          <th><a href="restaurant.html">Restaurants</a></th>
-          <th></th><th></th><th></th><th></th><th></th>
-          <th><a href="filter.html">Filter</a></th>
-          <th></th><th></th><th></th><th></th><th></th>
-          <th><a href="spinner.html">Spinner</a></th>
-          <th></th><th></th><th></th><th></th><th></th>
-          <th><a href="contactus.html">Contact Us</a></th>
-        </table>
 
-<!--This is nav list for CSS later-->
-<!--
-        <ul>
-          <li><a href="restaurant.html">Restaurants</a></li>
-          <li><a href="filter.html">Filter</a></li>
-          <li><a href="spinner.html">Spinner</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
--->
-      </nav>
     </header>
-<hr>
 
-    <!-- Banner -->
     <section id="banner">
-      <h2><font face=helvetica>Dinner Spinner</font></h2>
-      <br>
-      <img src="images/hoboken.jpeg" width=50% height=auto>
-      <p>Having trouble deciding what to eat for dinner? </p>
-      <ul>
-        <li><a href="restaurant.html" class="button">Get started</a></li>
-      </ul>
-
+      <div class="item">
+        <h2>Dinner Spinner</h2>
+      </div>
+      <div class="item">
+        <p>having trouble deciding what to eat for dinner?</p>
+      </div>
+      <div class="item">
+        <ul>
+          <li><a href="restaurant.html" class="button">Get started</a></li>
+        </ul>
+      </div>
     </section>
-<hr>
 
-<!-- First Section -->
-    <section id="first">
-      <header>
-        <h2><font face=helvetica>Welcome to Dinner Spinner!</font></h2>
-      </header>
-      <p>This is <strong>Dinner Spinner</strong>, which will help you choose a place to go out to eat from varying prices, cultures, food types, and individual preferences. </p>
+    <section id="welcome">
+      <div class="container">
+        <div class="item">
+          <h2>Welcome to Dinner Spinner!</h2>
+        </div>
+        <div class="item">
+          <p>This is <strong>Dinner Spinner</strong>, which will help you choose a place to go out to eat from varying prices, cultures, food types, and individual preferences. </p>
+        </div>
+      </div>
     </section>
-<hr>
 
-<!-- Second Section -->
-    <section id="second">
-      <header>
-        <h2><font face=helvetica>Our Team Members</font></h2>
-        <p>Meet the team!</p>
-      </header>
-        <div class="mijeong">
-          <header>
+    <section id="team">
+      <div class="container">
+        <div class="item">
+          <h2>Our Team Members</h2>
+          <p>Meet the team!</p>
+        </div>
+        <div class="item">
+          <!--I will set it up vertically-->
+          <div class="mijeong">
             <h4>Mijeong Ban</h4>
             <p>Computer Science</p>
-          </header>
-          <p></p>
-        </div>
-
-        <div class="ian">
-          <header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, odio.</p>
+          </div>
+          <div class="ian">
             <h4>Ian Gomez</h4>
             <p>Computer Science</p>
-          </header>
-          <p></p>
-        </div>
-
-        <div class="dana">
-          <header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, ratione.</p>
+          </div>
+          <div class="dana">
             <h4>Dana McGuire</h4>
             <p>Computer Science</p>
-          </header>
-          <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, laboriosam!</p>
+          </div>
+          <div class="Caroline">
+            <h4>Caroline Rubino</h4>
+            <p>Visual art and Technology</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, nulla!</p>
+          </div>
+          <div class="Luke">
+            <h4>Luke Bukowiec</h4>
+            <p>Computer Science</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, totam!</p>
+          </div>
         </div>
-
-        <div class="Caroline">
-          <h4>Caroline Rubino</h4>
-          <p>Visual art and Technology</p>
-        </header>
-        <p></p>
-        </div>
-
-        <div class="Luke">
-          <h4>Luke Bukowiec</h4>
-          <p>Computer Science</p>
-        </header>
-        <p></p>
-        </div>
+      </div>
     </section>
 
+    <section id="contact">
+      <div class="item">
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, nemo!</h3>
+      </div>
+      <div class="item">
+        <ul>
+          <li><a href="contactus.html" class="button">GET IN TOUCH</a></li>
+        </ul>
+      </div>
+    </section>
 
+    <footer id="footer">
+      <div class="item">
+        <!--insert social media icons-->
+      </div>
+      <div class="item">
+        <p>Copyright &copy; 2017 Dinner Spinner</p>
+      </div>
+    </footer>
   </body>
-<hr>
-  <footer id="footer">
-    <!--insert social media icons-->
-    <i>Copyright &copy; 2017 Dinner Spinner</i>
-  </footer>
 </html>
