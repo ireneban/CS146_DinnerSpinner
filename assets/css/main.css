@@ -1,0 +1,49 @@
+/*dummy*/
+
+#banner {
+  border: 1px solid black;
+}
+#welcome {
+  border: 1px solid black;
+}
+#team {
+  border: 1px solid black;
+}
+#contact {
+  border: 1px solid black;
+}
+#footer {
+  border: 1px solid black;
+}
+h1 {
+
+}
+/*-------------------------*/
+a{
+  text-decoration: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+/*----------- Header -------------*/
+header, nav ul {
+  display:flex;
+  flex-direction: row;
+  font-family: 'Spectral SC', serif;
+}
+header{
+    justify-content: space-between;
+}
+#title {
+  padding-left: 2rem;
+}
+nav ul {
+  list-style: none;
+  padding-right: 2rem;
+}
+nav ul li{
+  margin: 1rem 1rem 1rem;
+}
+/*--------Header End ------------*/
+/*---------- Banner ----------*/
