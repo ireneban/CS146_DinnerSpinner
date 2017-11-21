@@ -1,7 +1,4 @@
 /*dummy*/
-#team {
-  border: 1px solid black;
-}
 #contact {
   border: 1px solid black;
 }
@@ -15,10 +12,17 @@ h1 {
 a{
   text-decoration: none;
 }
-body {
+body{
   display: flex;
   flex-direction: column;
   margin: 0rem 0rem 0rem
+}
+h2, h4, p{
+  font-family: 'Raleway', sans-serif;
+}
+h2{
+  color: #484848;
+  text-transform: uppercase;
 }
 #bg-wrapper{
   background-image: url("images/overlay.png"), url("../images/banner.jpg");
@@ -74,15 +78,33 @@ nav ul li{
   font-size: 1.5rem;
   color:#BBBBBB;
 }
-#welcome div{
+/*------- Banner End -------*/
+/*------- Welcome --------*/
+#welcome .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-#welcome .container {
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
-  border: 1px solid red;
+  padding-top: 4rem;
+  padding-bottom: 4.5rem;
   margin-left: 4rem;
   margin-right: 4rem;
+}
+#welcome p{
+  width: 50rem;
+}
+/*---- Welcome End -------*/
+/*------ Team -----------*/
+#team .container{ /*h2, p랑 팀전체*/
+  margin: 1em 9rem 1rem 9rem;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #F0F0F0;
+}
+#team .item:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+#team .subitem1{
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem; 
 }
