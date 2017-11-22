@@ -1,23 +1,16 @@
-/*dummy*/
-#contact {
-  border: 1px solid black;
-}
-#footer {
-  border: 1px solid black;
-}
-h1 {
-
-}
-/*-------------------------*/
+/*--CS146: Final Project: CSS
+----Team3: Mijeong Ban, Ian Gomez, Dana McGuire, Caroline Rubino, Luke Bukowiec
+----I pledge my honor that I have abided by the Stevens Honor System. */
 a{
   text-decoration: none;
 }
 body{
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   margin: 0rem 0rem 0rem
 }
-h2, h4, p{
+h2, h3, h4, p, input{
   font-family: 'Raleway', sans-serif;
 }
 h2{
@@ -29,6 +22,15 @@ h2{
   background-position: center top;
   background-attachment: fixed;
 }
+input{
+  border: 1px solid #BBBBBB;
+  border-radius: 1.3rem;
+  padding: 1rem 2rem 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 100%;
+  color: #6C6C6C;
+}
 /*----------- Header -------------*/
 header, nav ul {
   display:flex;
@@ -39,7 +41,9 @@ header, nav ul {
 header{
     justify-content: space-between;
     background-color: gray;
-    background-color: rgba( 255, 255, 255, 0.2 )
+    background-color: rgba(255, 255, 255, 0.2);
+/*    position: fixed;  */
+/*    if it does not work, make TOP button */
 }
 header a{
   color: white;
@@ -94,7 +98,7 @@ nav ul li{
 }
 /*---- Welcome End -------*/
 /*------ Team -----------*/
-#team .container{ /*h2, p랑 팀전체*/
+#team .container{
   margin: 1em 9rem 1rem 9rem;
   padding: 1rem 2rem 1rem 2rem;
   background-color: #F0F0F0;
@@ -106,5 +110,28 @@ nav ul li{
 #team .subitem1{
   display: flex;
   flex-direction: column;
-  padding-right: 1.5rem; 
+  padding-right: 1.5rem;
+}
+/*----- Team End ------*/
+/*------ ContactUs -------*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/contact.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10rem 2rem 10rem 2rem;
+  margin: 1rem 7rem 3rem 7rem;
+  color: #BBBBBB;
+}
+/*----- ContactUs End -----*/
+/*------- Footer --------*/
+#footer {
+  padding: 1rem 1rem 1rem 1rem;
+}
+#footer p{
+  text-transform: uppercase;
+  text-align: center;
 }
