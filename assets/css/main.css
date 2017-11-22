@@ -58,7 +58,7 @@ nav ul {
 nav ul li{
   margin: 1rem 1rem 1rem;
 }
-/*--------Header End ------------*/
+/*-------- Header End ------------*/
 /*---------- Banner ----------*/
 #banner {
   display: flex;
@@ -83,6 +83,18 @@ nav ul li{
   color:#BBBBBB;
 }
 /*------- Banner End -------*/
+/*------- Banner for sub pages ------*/
+#banner2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+#banner2 .item h2 {
+  display:none;
+}
+/*------ Banner for sub pages End -----*/
 /*------- Welcome --------*/
 #welcome .container {
   display: flex;
@@ -135,3 +147,8 @@ nav ul li{
   text-transform: uppercase;
   text-align: center;
 }
+/*------- Footer End --------*/
+
+
+
+/*===================== Restaurant page ======================*/
