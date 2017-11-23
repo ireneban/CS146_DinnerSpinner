@@ -1,0 +1,81 @@
+template
+<title>
+1. food kind
+2. address
+3. phone number
+4. opening hours
+5. delivery/ takeout (체크박스무늬로 가능?)
+6. Business website
+7. duck bill accept
+8. Wi-fi
+메뉴사진, 음식사진 몇개
+구글지도 삽입.
+
+
+<Makai Poke>
+1. Hawaiian, Poke, Salad
+2. 521 Washington St Hoboken, NJ 07030
+3. (201) 683-5830
+4. hours
+Mon	11:00 am - 9:00 pm
+Tue	11:00 am - 9:00 pm
+Wed	11:00 am - 9:00 pm
+Thu	11:00 am - 9:30 pm
+Fri	11:00 am - 9:30 pm
+Sat	11:00 am - 9:30 pm
+Sun	11:30 am - 9:00 pm
+5. delivery -Yes / takeout -Yes (체크박스무늬로 가능?)
+6. makaipokeco.com
+7. Yes
+8. Wi-fi -Free
+
+<Gogi Grill>
+1. Korean, Asian Fusion, Fast Food
+2. 79 Hudson St Hoboken, NJ 07030
+3. (201) 792-4504
+4. opening hours
+Mon	11:00 am - 10:00 pm
+Tue	11:00 am - 10:00 pm
+Wed	11:00 am - 10:00 pm
+Thu	11:00 am - 10:00 pm
+Fri	11:00 am - 11:00 pm
+Sat	11:00 am - 11:00 pm
+Sun	11:00 am - 10:00 pm
+5. delivery -Yes/ takeout -Yes (체크박스무늬로 가능?)
+6. gogigrill.com
+7. duck bill accept
+8. Wi-fi -Free
+
+<Midtown Philly Steaks>
+1. Sandwiches, Cheesesteaks, Chicken Wings
+2. 523 Washington St Hoboken, NJ 07030
+3. (201) 610-0610
+4. opening hours
+Mon	10:30 am - 11:00 pm
+Tue	10:30 am - 11:00 pm
+Wed	10:30 am - 11:00 pm
+Thu	10:30 am - 2:00 am
+Fri	10:30 am - 4:00 am
+Sat	10:30 am - 4:00 am
+Sun	10:30 am - 11:00 pm
+5. delivery -Yes/ takeout -Yes (체크박스무늬로 가능?)
+6. midtownphillysteaks.com
+7. duck bill accept
+8. Wi-fi -No
+
+<Flatbread Grill>
+1. Mediterranean, Turkish, Middle Eastern
+2. 517 Washingston St Hoboken, NJ 07030
+3. (201) 659-6560
+4. opening hours
+Mon	11:30 am - 10:00 pm
+Tue	11:30 am - 10:00 pm
+Wed	11:30 am - 10:00 pm
+Thu	11:30 am - 10:00 pm
+Fri	11:30 am - 10:00 pm
+Sat	11:30 am - 10:00 pm
+Sun	11:30 am - 10:00 pm
+5. delivery -Yes/ takeout -Yes (체크박스무늬로 가능?)
+6. flatbreadgrill.com
+7. duck bill accept
+8. Wi-fi -No
