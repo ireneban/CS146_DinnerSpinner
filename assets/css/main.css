@@ -4,6 +4,10 @@
 a{
   text-decoration: none;
 }
+nav ul li a:hover{
+    color:white;
+    text-shadow: 0px 0px 5px white;
+}
 a:hover {
   cursor: pointer;
   border-bottom: 1px dotted white;
@@ -64,7 +68,9 @@ nav ul {
   padding-right: 2rem;
 }
 nav ul li{
+ 
   margin: 1rem 1rem 1rem;
+  transition: all 0.2s ease-out;
 }
 /*-------- Header End ------------*/
 /*---------- Banner ----------*/
@@ -156,7 +162,9 @@ nav ul li{
   text-align: center;
 }
 /*------- Footer End --------*/
-
+.active{
+    color:lightgrey;
+}
 
 
 /*===================== Restaurant page ======================*/
