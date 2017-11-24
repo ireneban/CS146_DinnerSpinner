@@ -160,3 +160,30 @@ nav ul li{
 
 
 /*===================== Restaurant page ======================*/
+#restaurant {
+  border: 1px solid brown;
+}
+
+#restaurant .container {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#restaurant h2{
+  border: 1px solid black;
+}
+#restaurant .map {
+  margin: 4rem 18rem 4rem 18rem;
+  height: 1000px;
+  width: 865px;
+  background-image: url("../images/mapbg.png");
+  background-position: center;
+  background-size: contain;
+}
+#restaurant .map a:nth-child(1){
+  position: relative;
+  top: 430px;
+  left: 350px;
+  color: black;
+}
