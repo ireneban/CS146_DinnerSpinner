@@ -160,18 +160,13 @@ nav ul li{
 
 
 /*===================== Restaurant page ======================*/
-#restaurant {
-  border: 1px solid brown;
-}
-
-#restaurant .container {
-  border: 1px solid blue;
+#restaurant>.container{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#restaurant h2{
-  border: 1px solid black;
+#restaurant header{
+  margin-top: 3rem;
 }
 #restaurant .map {
   margin: 4rem 18rem 4rem 18rem;
@@ -181,9 +176,57 @@ nav ul li{
   background-position: center;
   background-size: contain;
 }
-#restaurant .map a:nth-child(1){
+#restaurant .map a {
   position: relative;
+  color: #908589;
+}
+#restaurant .map a:nth-child(1){
   top: 430px;
   left: 350px;
-  color: black;
 }
+#restaurant .map a:nth-child(2){
+  top: 890px;
+  left: 390px;
+}
+#restaurant .map a:nth-child(3){
+  top: 445px;
+  left: 298px;
+}
+#restaurant .map a:nth-child(4){
+  top: 460px;
+  left: 272px;
+}
+#restaurant .map a:nth-child(5){
+  top: 475px;
+  left: 245px;
+}
+#restaurant .map a:nth-child(6){
+  top: 850px;
+  left: 220px;
+}
+#restaurant .map a:nth-child(7){
+  top: 466px;
+  left: 195px;
+}
+#restaurant .map a:nth-child(8){
+  top:473px;
+  left: 140px;
+}
+#restaurant .map a:nth-child(9){
+  top: 725px;
+  left: 143px;
+}
+#restaurant .map a:nth-child(10){
+  top: 700px;
+  left: 120px;
+}
+#restaurant .map a:nth-child(11){
+  top: 750px;
+  left: 65px;
+}
+
+/*================== Restaurant page END ===================*/
+
+/*============== Restaurant INFO page =================*/
+
+/*============ Restaurant INFO page END ===============*/
