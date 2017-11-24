@@ -1,5 +1,6 @@
 README.text
 
+
 CS146: Final Project
 Team3
 
@@ -7,7 +8,7 @@ Team3
 2. filter, spinner, contactus pages will be implemented by using JavaScript later.
 3. Restaurants will be more added.
 4. On each restaurant info page, gallery and marked google map will added by using JavaScript.
-
+5. No template for CSS was used on this website. 
 
 Last Update: Nov 24, 2017. Mijeong Ban
  
