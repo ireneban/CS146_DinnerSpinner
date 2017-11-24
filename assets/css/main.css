@@ -120,7 +120,7 @@ nav ul li{
 /*---- Welcome End -------*/
 /*------ Team -----------*/
 #team .container{
-  margin: 1em 9rem 1rem 9rem;
+  margin: 1em 6rem 1rem 6rem;
   padding: 1rem 2rem 1rem 2rem;
   background-color: #F0F0F0;
 }
@@ -132,6 +132,25 @@ nav ul li{
   display: flex;
   flex-direction: column;
   padding-right: 1.5rem;
+}
+#team .subitem2{
+  text-align: right;
+}
+#team .memberwrapper{
+  display: flex;
+  flex-direction: row;
+}
+#team .avatar {
+  border-radius: 100%;
+  display:inline-block;
+  padding: 0.5rem;
+  background-color: #F1EBE8;
+  border: 1px solid #E3DDDA;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+#team .avatar img {
+  border-radius: 100%;
+  display: block;
 }
 /*----- Team End ------*/
 /*------ ContactUs -------*/
