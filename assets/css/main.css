@@ -5,8 +5,8 @@ a{
   text-decoration: none;
   color: gray;
 }
-nav a:hover{
-    color:white;
+li {
+  list-style: none;
 }
 nav ul li a:hover{
     color:white;
@@ -47,21 +47,22 @@ input:hover{
   cursor: pointer;
   color: white;
 }
+.active{
+  color: gray;
+}
 /*----------- Header -------------*/
-nav {
+header, nav ul {
   display:flex;
   flex-direction: row;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }
-nav{
+header{
     justify-content: space-between;
     background-color: gray;
     background-color: rgba(255, 255, 255, 0.2);
-/*    position: fixed;  */
-/*    if it does not work, make TOP button */
 }
-nav a{
+header a{
   color: white;
 }
 #title {
@@ -72,9 +73,26 @@ nav ul {
   padding-right: 2rem;
 }
 nav ul li{
-
   margin: 1rem 1rem 1rem;
   transition: all 0.2s ease-out;
+}
+@media (max-width: 832px){
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  header>h1{
+    margin-bottom: 0rem;
+  }
+}
+@media (max-width: 534px){
+  header>h1{
+    font-size: 150%;
+  }
+  nav ul li{
+    font-size: 60%;
+    margin-right: 0rem;
+  }
 }
 /*-------- Header End ------------*/
 /*---------- Banner ----------*/
@@ -99,6 +117,25 @@ nav ul li{
 #banner .item p{
   font-size: 1.5rem;
   color:#BBBBBB;
+}
+@media (max-width: 832px){
+  #banner{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+  #banner>.item h2{
+    font-size: 200%;
+  }
+  #banner>.item:nth-child(2) p{
+    font-size: 100%;
+  }
+}
+@media (max-width: 436px){
+  #banner>.item:nth-child(2) p{
+    text-align: justify;
+    width: inherit;
+    margin: 1rem 2rem 1rem 2rem;
+  }
 }
 /*------- Banner End -------*/
 /*------- Banner for sub pages ------*/
@@ -125,6 +162,12 @@ nav ul li{
 }
 #welcome p{
   width: 50rem;
+}
+@media (max-width: 832px){
+  #welcome .container>.item:nth-child(2) p{
+    text-align: justify;
+    width: inherit;
+  }
 }
 /*---- Welcome End -------*/
 /*------ Team -----------*/
@@ -161,6 +204,50 @@ nav ul li{
   border-radius: 100%;
   display: block;
 }
+@media (max-width: 948px){
+  #team>.container {
+    margin: 1rem 2rem 1rem 2rem;
+  }
+  #team .item:nth-child(2){
+    flex-direction: column;
+  }
+  #team .subitem1 .memberwrapper:nth-child(2){
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  #team .subitem2 .memberwrapper:nth-child(1){
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  #team .subitem2 .memberwrapper:nth-child(3){
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  #team .memberinfo {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 589px){
+  #team .container {
+    margin: 0 0 0 0;
+  }
+  #team .container>.item{
+    text-align: center;
+  }
+  #team .subitem1 .memberwrapper:nth-child(n+1){
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  #team .subitem2 .memberwrapper:nth-child(n+1){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 /*----- Team End ------*/
 /*------ ContactUs -------*/
 #contact {
@@ -171,33 +258,59 @@ nav ul li{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 10rem 2rem 10rem 2rem;
+  padding: 8rem 2rem 8rem 2rem;
   margin: 1rem 7rem 3rem 7rem;
   color: #BBBBBB;
+  text-transform: uppercase;
+}
+@media (max-width: 832px){
+  #contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 1rem 0 1rem 0;
+  }
 }
 /*----- ContactUs End -----*/
 /*------- Footer --------*/
 #footer {
+  background-color: #F0F0F0;
   padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #footer p{
   text-transform: uppercase;
   text-align: center;
+  font-size: 80%;
+  position: relative;
+  left: 0.5rem;
+}
+#footer .icons li {
+  display: inline-block;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-color: #C2C2C2;
+  width:2rem;
+  height:2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+#footer .icons li:hover {
+  background-color: #F3E2DA;
+}
+#footer .icons li a{
+  color:#F0F0F0;
+  text-decoration: none;
+  border-bottom: none;
+}
+#footer .icons li .label{
+  display: none;
 }
 /*------- Footer End --------*/
-.active{
-    color:lightgrey;
-}
-
-form input{
-    margin: 10px;
-    padding: 10px;
-    display:inline-block;
-    overflow:hidden
-}
-
 /*===================== Restaurant page ======================*/
-
 #restaurant>.container{
   display: flex;
   flex-direction: column;
@@ -211,17 +324,16 @@ form input{
   height: 1000px;
   width: 865px;
   background-image: url("../images/mapbg.png");
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
-    background-position: center center; 
-    box-sizing:border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 #restaurant .map a {
   position: relative;
-  color: #908589;
+  color: #5F5D5C;
 }
 #restaurant .map a:nth-child(1){
-  /* pokemon bowls */
   top: 40%;
   left: 40%;
 }
@@ -230,23 +342,18 @@ form input{
   left: 45.5%;
 }
 #restaurant .map a:nth-child(3){
-    /* are these any good i could use a cheesesteak at 2 am */
-  top: 45%;
+  top: 42%;
   left: 34.5%;
 }
 #restaurant .map a:nth-child(4){
-    /* this place is the goat btw if u dont know what im doing im pretty much just changing the values from px to % so it can scale across
-    a changing size */
   top: 46%;
   left: 31.5%;
 }
 #restaurant .map a:nth-child(5){
-    /* karmas a bitch */
   top: 47.5%;
   left: 28.5%;
 }
 #restaurant .map a:nth-child(6){
-/*  yoooooo there is a surf taco here im outtie */
   top: 85%;
   left: 26%;
 }
@@ -255,7 +362,6 @@ form input{
   left: 22.5%;
 }
 #restaurant .map a:nth-child(8){
-  /* mamamamamamamama falaffel dont read these its 2:35 rn*/
   top:47%;
   left: 16%;
 }
@@ -271,162 +377,444 @@ form input{
   top: 75%;
   left: 9%;
 }
+#restaurant .map a:nth-child(12){
+  top: 85%;
+  left: 10%;
+}
+#restaurant .map a:nth-child(13){
+  top: 52%;
+  left: 4%;
+}
+#restaurant .map a:nth-child(14){
+  top: 43%;
+  left: -3%;
+}
+#restaurant .map a:nth-child(15){
+  top: 22%;
+  left: -14%;
+}
+#restaurant .map a:nth-child(16){
+  top: 32%;
+  left: -9%;
+}
+#restaurant .map a:nth-child(17){
+  top: 34.5%;
+  left: -11.5%;
 
+  
+}
+#restaurant .map a:nth-child(18){
+  top: 9.5%;
+  left: -15%;
+}
+
+#restaurant .map a:nth-child(19){
+  top: 23%;
+  left: -17.5%;
+}
+#restaurant .map a:nth-child(20){
+  top: 43%;
+  left: -17%;
+}
+#restaurant .map a:nth-child(21){
+  top: 20%;
+  left: -23%;
+}
+          #restaurant .map a:nth-child(22){
+    top: 50%;
+    left: -24%;
+  }
+    #restaurant .map a:nth-child(23){
+  top: 2%;
+  left:-30%;
+}
+        #restaurant .map a:nth-child(24){
+  top: 44%;
+  left:-30%;
+}
+            #restaurant .map a:nth-child(25){
+  top: 41%;
+  left:-36%;
+}
+                    #restaurant .map a:nth-child(26){
+  top: 38%;
+  left:-36%;
+}
+#restaurant .map a:nth-child(27){
+  top: 45%;
+  left: -42%;
+}
+#restaurant .map a:nth-child(28){
+  top: 57%;
+  left: -50%;
+}
+#restaurant .map a:nth-child(29){
+  top: 53%;
+  left: -48%;
+=======
+}
+#restaurant .map a:nth-child(18){
+  top: 10%;
+  left: -15%;
+}
+#restaurant .map a:nth-child(19){
+  top: 25%;
+  left: -18%;
+}
+#restaurant .map a:nth-child(20){
+  top: 43%;
+  left: -18%;
+>>>>>>> 936938c19318847e1242d5800511ab0497a8f016
+}
+@media only screen and (max-width:865px){
+  #restaurant .map {
+    height:600px;
+    width:500px;
+  }
+  #restaurant .map a:nth-child(1){
+    top: 40%;
+    left: 39%;
+  }
+  #restaurant .map a:nth-child(2){
+    top: 87.5%;
+    left: 42.5%;
+  }
+  #restaurant .map a:nth-child(3){
+    top: 43%;
+    left: 28%;
+  }
+  #restaurant .map a:nth-child(4){
+    top: 44.5%;
+    left: 23%;
+  }
+  #restaurant .map a:nth-child(5){
+    top: 46.5%;
+    left: 17%;
+  }
+  #restaurant .map a:nth-child(6){
+    top: 84%;
+    left: 9%;
+  }
+  #restaurant .map a:nth-child(7){
+    top: 45.5%;
+    left: 6.5%;
+  }
+  #restaurant .map a:nth-child(8){
+    top:46%;
+    left: -1.5%;
+  }
+  #restaurant .map a:nth-child(9){
+    top: 71%;
+    left: -3%;
+  }
+  #restaurant .map a:nth-child(10){
+    top: 67%;
+    left: -8%;
+  }
+  #restaurant .map a:nth-child(11){
+    top: 74%;
+    left: -15%;
+  }
+  #restaurant .map a:nth-child(12){
+    top: 84%;
+    left: -19%;
+  }
+  #restaurant .map a:nth-child(13){
+    top: 52%;
+    left: -24%;
+  }
+  #restaurant .map a:nth-child(14){
+    top: 43%;
+    left: -33%;
+  }
+  #restaurant .map a:nth-child(15){
+    top: 22%;
+    left: -46%;
+  }
+  #restaurant .map a:nth-child(16){
+    top: 32%;
+    left: -44%;
+  }
+
+
+#restaurant .map a:nth-child(17){
+  top: 34%;
+  left:-48%;
+  
+}
+#restaurant .map a:nth-child(18){
+  top: 9.5%;
+  left: -54%;
+}
+#restaurant .map a:nth-child(19){
+  top: 22%;
+  left: -59%;
+}
+      #restaurant .map a:nth-child(20){
+    top: 38.5%;
+    left: 40%;
+  }
+          #restaurant .map a:nth-child(21){
+    top: 15%;
+    left: 30%;
+  }
+              #restaurant .map a:nth-child(22){
+    top: 47%;
+    left: 29%;
+  }
+        #restaurant .map a:nth-child(23){
+  top: -2%;
+  left:20%;
+}
+            #restaurant .map a:nth-child(24){
+  top: 39%;
+  left:18%;
+}
+                #restaurant .map a:nth-child(25){
+  top: 38%;
+  left:9%;
+}
+                        #restaurant .map a:nth-child(26){
+  top: 34%;
+  left:8%;
+}
+#restaurant .map a:nth-child(27){
+  top: 41.5%;
+  left: -2%;
+}
+#restaurant .map a:nth-child(28){
+  top: 53%;
+  left: -12%;
+}
+#restaurant .map a:nth-child(28){
+  top: 53%;
+  left: -12%;
+}
+#restaurant .map a:nth-child(29){
+  top: 49%;
+  left: -12%;
+}
+=======
+  #restaurant .map a:nth-child(17){
+    top: 34.5%;
+    left: -48%;
+  }
+  #restaurant .map a:nth-child(18){
+    top: 10%;
+    left: -55%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 25%;
+    left: -60%;
+  }
+  #restaurant .map a:nth-child(20){
+    top: 38%;
+    left: 39%;
+  }
+>>>>>>> 936938c19318847e1242d5800511ab0497a8f016
+}
+@media only screen and (max-width:600px){
+
+    #restaurant .map {
+    height:400px;
+    width:300px;
+  }
+  #restaurant .map a:nth-child(1){
+    top: 40%;
+    left: 36%;
+  }
+  #restaurant .map a:nth-child(2){
+    top: 87%;
+    left: 35%;
+  }
+  #restaurant .map a:nth-child(3){
+    top: 42%;
+    left: 18.5%;
+  }
+  #restaurant .map a:nth-child(4){
+    top: 44%;
+    left: 10%;
+  }
+  #restaurant .map a:nth-child(5){
+    top: 46%;
+    left: 1%;
+  }
+  #restaurant .map a:nth-child(6){
+    top: 83%;
+    left: -10%;
+  }
+  #restaurant .map a:nth-child(7){
+    top: 45%;
+    left: -15%;
+  }
+  #restaurant .map a:nth-child(8){
+    top:45%;
+    left: -29%;
+  }
+  #restaurant .map a:nth-child(9){
+    top: 69.5%;
+    left: -35%;
+  }
+  #restaurant .map a:nth-child(10){
+    top: 66%;
+    left: -43%;
+  }
+  #restaurant .map a:nth-child(11){
+    top: 73%;
+    left: -54%;
+  }
+  #restaurant .map a:nth-child(12){
+    top: 78%;
+    left: 40%;
+  }
+  #restaurant .map a:nth-child(13){
+    top: 45%;
+    left: 28%;
+  }
+  #restaurant .map a:nth-child(14){
+    top: 37%;
+    left: 15%;
+  }
+  #restaurant .map a:nth-child(15){
+    top: 17%;
+    left: -2%;
+  }
+  #restaurant .map a:nth-child(16){
+    top: 26%;
+    left: -3%;
+  }
+
+    #restaurant .map a:nth-child(17){
+  top: 28%;
+    left: -12%;
+}
+    #restaurant .map a:nth-child(18){
+  top: 2%;
+  left:-20%;
+}
+#restaurant .map a:nth-child(19){
+  top: 19%;
+  left: -28.5%;
+}
+      #restaurant .map a:nth-child(20){
+    top: 37%;
+    left: -33%;
+  }
+          #restaurant .map a:nth-child(21){
+    top: 13%;
+    left: -47%;
+  }
+              #restaurant .map a:nth-child(22){
+    top: 44%;
+    left: -52%;
+  }
+        #restaurant .map a:nth-child(23){
+  top: -8%;
+  left:33%;
+}
+            #restaurant .map a:nth-child(24){
+   top: 35.5%;
+  left:29%;
+
+}
+                #restaurant .map a:nth-child(25){
+  top: 30%;
+  left:15%;
+}
+                    #restaurant .map a:nth-child(26){
+  top: 27%;
+  left:11%;
+}
+#restaurant .map a:nth-child(27){
+  top: 36%;
+  left: -2%;
+}
+#restaurant .map a:nth-child(28){
+  top: 47%;
+  left: -18%;
+}
+#restaurant .map a:nth-child(29){
+  top: 42%;
+  left: -20%;
+}
+
+  #restaurant .map a:nth-child(17){
+    top: 30.5%;
+    left: -11%;
+  }
+  #restaurant .map a:nth-child(18){
+    top: 5%;
+    left: -19%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 20%;
+    left: -20%;
+  }
+  #restaurant .map a:nth-child(20){
+    top: 38%;
+    left: -32%;
+  }
+
+}
 /*================== Restaurant page END ===================*/
 
 /*============== Restaurant INFO page =================*/
-
-#toggler{
-    height:100%;
-    width:100%;
-}
 #resInfo .container{
-  margin: 2rem 8rem 2rem 8rem;
+  margin: 2rem 7rem 2rem 7rem;
   display: flex;
   flex-direction: column;
 }
 #resInfo .container .top{
   margin-left: 4rem;
 }
+/*gallery by using JavaScript will be placed*/
+#resInfo .images p{
+  visibility: hidden;
+}
 #resInfo .container .bottom{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #resInfo .container .bottom .detailinfo{
   margin-left: 2rem;
   padding-left: 1rem;
   padding-right: 7rem;
-  border-right: 1px dotted gray;
 }
 #resInfo .container .bottom .detailinfo>#hours{
   margin-left: 1rem;
 }
-
+.googlemap {
+  padding: 1rem 2rem 1rem 2rem;
+}
+.googlemap iframe {
+  width: 20rem;
+  height: 20rem;
+}
+@media (max-width: 1081px){
+  #resInfo .container{
+    margin: 2rem 1.5rem 2rem 1.5rem;
+  }
+  #resInfo .container .bottom .detailinfo{
+    padding-right: 0rem;
+  }
+}
+@media (max-width: 701px){
+  #resInfo .container {
+    margin: 0 0 0 0;
+  }
+  #resInfo .container .bottom{
+    flex-direction: column;
+    align-items: center;
+  }
+  #resInfo .container .bottom .detailinfo {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+}
 /*============ Restaurant INFO page END ===============*/
 
-/* responsive design portion to make the map smaller while the page gets smaller e.g. shrinking page, using tablet, using phone */
-@media only screen and (max-width:865px){
-#restaurant .map {
-    height:600px;
-    width:500px;
-    }
-    #restaurant .map a:nth-child(1){
-  /* pokemon bowls */
-  top: 40%;
-  left: 39%;
-}
-#restaurant .map a:nth-child(2){
-  top: 87.5%;
-  left: 42.5%;
-}
-#restaurant .map a:nth-child(3){
-    /* are these any good i could use a cheesesteak at 2 am */
-  top: 43%;
-  left: 28%;
-}
-#restaurant .map a:nth-child(4){
-    /* this place is the goat btw if u dont know what im doing im pretty much just changing the values from px to % so it can scale across
-    a changing size */
-  top: 44.5%;
-  left: 23%;
-}
-#restaurant .map a:nth-child(5){
-    /* karmas a bitch */
-  top: 46.5%;
-  left: 17%;
-}
-#restaurant .map a:nth-child(6){
-/*  yoooooo there is a surf taco here im outtie */
- top: 84%;
-  left: 9%;
-}
-#restaurant .map a:nth-child(7){
-    /* bareburger is also hella good but shomney */
-  top: 45.5%;
-  left: 6.5%;
-}
-#restaurant .map a:nth-child(8){
-  /* mamamamamamamama falaffel dont read these its 2:35 rn*/
-  top:46%;
-  left: -1.5%;
-}
-#restaurant .map a:nth-child(9){
-    /* koro koro*/
-  top: 71%;
-  left: -3%;
-}
-#restaurant .map a:nth-child(10){
-    /* quality greens */
-  top: 67%;
-  left: -8%;
-}
-#restaurant .map a:nth-child(11){
-    /* honeygrow */
-  top: 74%;
-  left: -15%;
-}
-
-}
-@media only screen and (max-width:600px){
-#restaurant .map {
-    height:400px;
-    width:300px;
-    }
-#restaurant .map a:nth-child(1){
-  /* pokemon bowls */
-  top: 40%;
-  left: 36%;
-}
-#restaurant .map a:nth-child(2){
-    /* gogi grill */
-  top: 87%;
-  left: 35%;
-}
-#restaurant .map a:nth-child(3){
-    /* are these any good i could use a cheesesteak at 2 am */
-  top: 42%;
-  left: 18.5%;
-}
-#restaurant .map a:nth-child(4){
-    /* flatbread this place is the goat btw if u dont know what im doing im pretty much just changing the values from px to % so it can scale across
-    a changing size */
-  top: 44%;
-  left: 10%;
-}
-#restaurant .map a:nth-child(5){
-    /* karmas a bitch */
-  top: 46%;
-  left: 1%;
-}
-#restaurant .map a:nth-child(6){
-/*  yoooooo there is a surf taco here im outtie */
-  top: 83%;
-  left: -10%;
-}
-#restaurant .map a:nth-child(7){
-    /* bareburger */
-  top: 45%;
-  left: -15%;
-}
-#restaurant .map a:nth-child(8){
-  /* mamamamamamamama falaffel dont read these its 2:35 rn*/
-  top:45%;
-  left: -29%;
-}
-#restaurant .map a:nth-child(9){
-    /* koro koro */
-  top: 69.5%;
-  left: -35%;
-}
-#restaurant .map a:nth-child(10){
-    /* quality greens */
-  top: 66%;
-  left: -43%;
-}
-#restaurant .map a:nth-child(11){
-    /* honeygrow */
-  top: 73%;
-  left: -54%;
-}
+/*Filter, Spinner, Contactus page will be implemented by using JS*/
+#filter, #spinner, #contactus .container{
+  margin: 1rem 1rem 1rem 1rem;
 }

@@ -9,6 +9,7 @@ Team3
 3. Restaurants will be more added.
 4. On each restaurant info page, gallery and marked google map will added by using JavaScript.
 5. No template for CSS was used on this website. 
+6. Responsive design was added. 
 
-Last Update: Nov 24, 2017. Mijeong Ban
+Last Update: Nov 25, 2017. Mijeong Ban
  
