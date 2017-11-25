@@ -27,7 +27,7 @@ h2{
   text-transform: uppercase;
 }
 #bg-wrapper{
-  background-image: url("images/overlay.png"), url("../images/banner.jpg");
+  background-image: url("images/overlay.png"), url("../images/banner.png");
   background-position: center top;
   background-attachment: fixed;
 }
@@ -69,7 +69,7 @@ nav ul {
   padding-right: 2rem;
 }
 nav ul li{
- 
+
   margin: 1rem 1rem 1rem;
   transition: all 0.2s ease-out;
 }
@@ -292,7 +292,7 @@ nav ul li{
 
 /*Tablet view*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024ox){
-  
+
 }
 
 /*Mobile view*/
