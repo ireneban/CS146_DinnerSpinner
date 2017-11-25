@@ -189,6 +189,12 @@ nav ul li{
     color:lightgrey;
 }
 
+form input{
+    margin: 10px;
+    padding: 10px;
+    display:inline-block;
+    overflow:hidden
+}
 
 /*===================== Restaurant page ======================*/
 
@@ -270,7 +276,10 @@ nav ul li{
 
 /*============== Restaurant INFO page =================*/
 
-
+#toggler{
+    height:100%;
+    width:100%;
+}
 #resInfo .container{
   margin: 2rem 8rem 2rem 8rem;
   display: flex;
