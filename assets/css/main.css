@@ -5,6 +5,9 @@ a{
   text-decoration: none;
   color: gray;
 }
+nav a:hover{
+    color:white;
+}
 nav ul li a:hover{
     color:white;
     text-shadow: 0px 0px 5px white;
@@ -27,7 +30,7 @@ h2{
   text-transform: uppercase;
 }
 #bg-wrapper{
-  background-image: url("images/overlay.png"), url("../images/banner.jpg");
+  background-image: url("images/overlay.png"), url("../images/banner.png");
   background-position: center top;
   background-attachment: fixed;
 }
@@ -45,7 +48,12 @@ input:hover{
   color: white;
 }
 /*----------- Header -------------*/
-
+nav {
+  display:flex;
+  flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
 nav{
     justify-content: space-between;
     background-color: gray;
@@ -56,10 +64,17 @@ nav{
 nav a{
   color: white;
 }
+#title {
+  padding-left: 2rem;
+}
+nav ul {
+  list-style: none;
+  padding-right: 2rem;
+}
+nav ul li{
 
-#toggler{
-    height:100%;
-    width:100%
+  margin: 1rem 1rem 1rem;
+  transition: all 0.2s ease-out;
 }
 /*-------- Header End ------------*/
 /*---------- Banner ----------*/
@@ -176,6 +191,7 @@ nav a{
 
 
 /*===================== Restaurant page ======================*/
+
 #restaurant>.container{
   display: flex;
   flex-direction: column;
@@ -189,11 +205,10 @@ nav a{
   height: 1000px;
   width: 865px;
   background-image: url("../images/mapbg.png");
-    background-size:     cover;                      /* <------ */
+    background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center; 
     box-sizing:border-box;
-    border:1px solid blue;
 }
 #restaurant .map a {
   position: relative;
@@ -227,7 +242,7 @@ nav a{
 #restaurant .map a:nth-child(6){
 /*  yoooooo there is a surf taco here im outtie */
   top: 85%;
-  left: 25%;
+  left: 26%;
 }
 #restaurant .map a:nth-child(7){
   top: 47%;
@@ -236,19 +251,19 @@ nav a{
 #restaurant .map a:nth-child(8){
   /* mamamamamamamama falaffel dont read these its 2:35 rn*/
   top:47%;
-  left: 14%;
+  left: 16%;
 }
 #restaurant .map a:nth-child(9){
   top: 72.5%;
-  left: 15.5%;
+  left: 16.5%;
 }
 #restaurant .map a:nth-child(10){
   top: 68%;
-  left: 11.5%;
+  left: 13.5%;
 }
 #restaurant .map a:nth-child(11){
   top: 75%;
-  left: 7%;
+  left: 9%;
 }
 
 /*================== Restaurant page END ===================*/
@@ -293,8 +308,8 @@ nav a{
   left: 39%;
 }
 #restaurant .map a:nth-child(2){
-  top: 89%;
-  left: 45.5%;
+  top: 87.5%;
+  left: 42.5%;
 }
 #restaurant .map a:nth-child(3){
     /* are these any good i could use a cheesesteak at 2 am */
@@ -315,7 +330,7 @@ nav a{
 #restaurant .map a:nth-child(6){
 /*  yoooooo there is a surf taco here im outtie */
  top: 84%;
-  left: 11%;
+  left: 9%;
 }
 #restaurant .map a:nth-child(7){
     /* bareburger is also hella good but shomney */
@@ -325,22 +340,22 @@ nav a{
 #restaurant .map a:nth-child(8){
   /* mamamamamamamama falaffel dont read these its 2:35 rn*/
   top:46%;
-  left: -5%;
+  left: -1.5%;
 }
 #restaurant .map a:nth-child(9){
     /* koro koro*/
   top: 71%;
-  left: -7%;
+  left: -3%;
 }
 #restaurant .map a:nth-child(10){
     /* quality greens */
   top: 67%;
-  left: -12%;
+  left: -8%;
 }
 #restaurant .map a:nth-child(11){
     /* honeygrow */
   top: 74%;
-  left: -19%;
+  left: -15%;
 }
 
 }
@@ -367,13 +382,13 @@ nav a{
 #restaurant .map a:nth-child(4){
     /* flatbread this place is the goat btw if u dont know what im doing im pretty much just changing the values from px to % so it can scale across
     a changing size */
-  top: 43%;
-  left: 6.5%;
+  top: 44%;
+  left: 10%;
 }
 #restaurant .map a:nth-child(5){
     /* karmas a bitch */
-  top: 45.5%;
-  left: -1%;
+  top: 46%;
+  left: 1%;
 }
 #restaurant .map a:nth-child(6){
 /*  yoooooo there is a surf taco here im outtie */
@@ -382,27 +397,27 @@ nav a{
 }
 #restaurant .map a:nth-child(7){
     /* bareburger */
-  top: 44%;
-  left: -20%;
+  top: 45%;
+  left: -15%;
 }
 #restaurant .map a:nth-child(8){
   /* mamamamamamamama falaffel dont read these its 2:35 rn*/
   top:45%;
-  left: -35%;
+  left: -29%;
 }
 #restaurant .map a:nth-child(9){
     /* koro koro */
   top: 69.5%;
-  left: -40%;
+  left: -35%;
 }
 #restaurant .map a:nth-child(10){
     /* quality greens */
   top: 66%;
-  left: -50%;
+  left: -43%;
 }
 #restaurant .map a:nth-child(11){
     /* honeygrow */
-  top: 67%;
-  left: 36%;
+  top: 73%;
+  left: -54%;
 }
 }
