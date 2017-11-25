@@ -44,6 +44,9 @@ input:hover{
   cursor: pointer;
   color: white;
 }
+.active{
+  color: gray;
+}
 /*----------- Header -------------*/
 header, nav ul {
   display:flex;
@@ -55,8 +58,6 @@ header{
     justify-content: space-between;
     background-color: gray;
     background-color: rgba(255, 255, 255, 0.2);
-/*    position: fixed;  */
-/*    if it does not work, make TOP button */
 }
 header a{
   color: white;
@@ -69,9 +70,26 @@ nav ul {
   padding-right: 2rem;
 }
 nav ul li{
-
   margin: 1rem 1rem 1rem;
   transition: all 0.2s ease-out;
+}
+@media (max-width: 832px){
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  header>h1{
+    margin-bottom: 0rem;
+  }
+}
+@media (max-width: 534px){
+  header>h1{
+    font-size: 150%;
+  }
+  nav ul li{
+    font-size: 60%;
+    margin-right: 0rem;
+  }
 }
 /*-------- Header End ------------*/
 /*---------- Banner ----------*/
@@ -96,6 +114,25 @@ nav ul li{
 #banner .item p{
   font-size: 1.5rem;
   color:#BBBBBB;
+}
+@media (max-width: 832px){
+  #banner{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+  #banner>.item h2{
+    font-size: 200%;
+  }
+  #banner>.item:nth-child(2) p{
+    font-size: 100%;
+  }
+}
+@media (max-width: 436px){
+  #banner>.item:nth-child(2) p{
+    text-align: justify;
+    width: inherit;
+    margin: 1rem 2rem 1rem 2rem;
+  }
 }
 /*------- Banner End -------*/
 /*------- Banner for sub pages ------*/
@@ -122,6 +159,12 @@ nav ul li{
 }
 #welcome p{
   width: 50rem;
+}
+@media (max-width: 832px){
+  #welcome .container>.item:nth-child(2) p{
+    text-align: justify;
+    width: inherit;
+  }
 }
 /*---- Welcome End -------*/
 /*------ Team -----------*/
@@ -158,6 +201,50 @@ nav ul li{
   border-radius: 100%;
   display: block;
 }
+@media (max-width: 948px){
+  #team>.container {
+    margin: 1rem 2rem 1rem 2rem;
+  }
+  #team .item:nth-child(2){
+    flex-direction: column;
+  }
+  #team .subitem1 .memberwrapper:nth-child(2){
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+  #team .subitem2 .memberwrapper:nth-child(1){
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  #team .subitem2 .memberwrapper:nth-child(3){
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+  #team .memberinfo {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+}
+
+@media (max-width: 589px){
+  #team .container {
+    margin: 0 0 0 0;
+  }
+  #team .container>.item{
+    text-align: center;
+  }
+  #team .subitem1 .memberwrapper:nth-child(n+1){
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  #team .subitem2 .memberwrapper:nth-child(n+1){
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 /*----- Team End ------*/
 /*------ ContactUs -------*/
 #contact {
@@ -172,6 +259,13 @@ nav ul li{
   margin: 1rem 7rem 3rem 7rem;
   color: #BBBBBB;
 }
+@media (max-width: 832px){
+  #contact {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 1rem 0 1rem 0;
+  }
+}
 /*----- ContactUs End -----*/
 /*------- Footer --------*/
 #footer {
@@ -182,11 +276,6 @@ nav ul li{
   text-align: center;
 }
 /*------- Footer End --------*/
-.active{
-    color:lightgrey;
-}
-
-
 /*===================== Restaurant page ======================*/
 #restaurant>.container{
   display: flex;
@@ -202,57 +291,158 @@ nav ul li{
   width: 865px;
   background-image: url("../images/mapbg.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 #restaurant .map a {
   position: relative;
   color: #908589;
 }
 #restaurant .map a:nth-child(1){
-  top: 430px;
-  left: 350px;
+  top: 40%;
+  left: 40%;
 }
 #restaurant .map a:nth-child(2){
-  top: 890px;
-  left: 390px;
+  top: 89%;
+  left: 45.5%;
 }
 #restaurant .map a:nth-child(3){
-  top: 445px;
-  left: 298px;
+  top: 45%;
+  left: 34.5%;
 }
 #restaurant .map a:nth-child(4){
-  top: 460px;
-  left: 272px;
+  top: 46%;
+  left: 31.5%;
 }
 #restaurant .map a:nth-child(5){
-  top: 475px;
-  left: 245px;
+  top: 47.5%;
+  left: 28.5%;
 }
 #restaurant .map a:nth-child(6){
-  top: 850px;
-  left: 220px;
+  top: 85%;
+  left: 26%;
 }
 #restaurant .map a:nth-child(7){
-  top: 466px;
-  left: 195px;
+  top: 47%;
+  left: 22.5%;
 }
 #restaurant .map a:nth-child(8){
-  top:473px;
-  left: 140px;
+  top:47%;
+  left: 16%;
 }
 #restaurant .map a:nth-child(9){
-  top: 725px;
-  left: 143px;
+  top: 72.5%;
+  left: 16.5%;
 }
 #restaurant .map a:nth-child(10){
-  top: 700px;
-  left: 120px;
+  top: 68%;
+  left: 13.5%;
 }
 #restaurant .map a:nth-child(11){
-  top: 750px;
-  left: 65px;
+  top: 75%;
+  left: 9%;
 }
-
+@media only screen and (max-width:865px){
+  #restaurant .map {
+    height:600px;
+    width:500px;
+  }
+  #restaurant .map a:nth-child(1){
+    top: 40%;
+    left: 39%;
+  }
+  #restaurant .map a:nth-child(2){
+    top: 87.5%;
+    left: 42.5%;
+  }
+  #restaurant .map a:nth-child(3){
+    top: 43%;
+    left: 28%;
+  }
+  #restaurant .map a:nth-child(4){
+    top: 44.5%;
+    left: 23%;
+  }
+  #restaurant .map a:nth-child(5){
+    top: 46.5%;
+    left: 17%;
+  }
+  #restaurant .map a:nth-child(6){
+    top: 84%;
+    left: 9%;
+  }
+  #restaurant .map a:nth-child(7){
+    top: 45.5%;
+    left: 6.5%;
+  }
+  #restaurant .map a:nth-child(8){
+    top:46%;
+    left: -1.5%;
+  }
+  #restaurant .map a:nth-child(9){
+    top: 71%;
+    left: -3%;
+  }
+  #restaurant .map a:nth-child(10){
+    top: 67%;
+    left: -8%;
+  }
+  #restaurant .map a:nth-child(11){
+    top: 74%;
+    left: -15%;
+  }
+}
+@media only screen and (max-width:600px){
+  #restaurant .map {
+    height:400px;
+    width:300px;
+  }
+  #restaurant .map a:nth-child(1){
+    top: 40%;
+    left: 36%;
+  }
+  #restaurant .map a:nth-child(2){
+    top: 87%;
+    left: 35%;
+  }
+  #restaurant .map a:nth-child(3){
+    top: 42%;
+    left: 18.5%;
+  }
+  #restaurant .map a:nth-child(4){
+    top: 44%;
+    left: 10%;
+  }
+  #restaurant .map a:nth-child(5){
+    top: 46%;
+    left: 1%;
+  }
+  #restaurant .map a:nth-child(6){
+    top: 83%;
+    left: -10%;
+  }
+  #restaurant .map a:nth-child(7){
+    top: 45%;
+    left: -15%;
+  }
+  #restaurant .map a:nth-child(8){
+    top:45%;
+    left: -29%;
+  }
+  #restaurant .map a:nth-child(9){
+    top: 69.5%;
+    left: -35%;
+  }
+  #restaurant .map a:nth-child(10){
+    top: 66%;
+    left: -43%;
+  }
+  #restaurant .map a:nth-child(11){
+    top: 73%;
+    left: -54%;
+  }
+}
 /*================== Restaurant page END ===================*/
 
 /*============== Restaurant INFO page =================*/
@@ -282,20 +472,3 @@ nav ul li{
 }
 
 /*============ Restaurant INFO page END ===============*/
-
-
-
-
-
-/*---------------- Responsive Design -------------------*/
-/*Desktop view*/
-
-/*Tablet view*/
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024ox){
-
-}
-
-/*Mobile view*/
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-
-}
