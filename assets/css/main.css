@@ -3,7 +3,6 @@
 ----I pledge my honor that I have abided by the Stevens Honor System. */
 a{
   text-decoration: none;
-  color: gray;
 }
 nav ul li a:hover{
     color:white;
@@ -126,7 +125,7 @@ nav ul li{
 /*---- Welcome End -------*/
 /*------ Team -----------*/
 #team .container{
-  margin: 1em 6rem 1rem 6rem;
+  margin: 1em 9rem 1rem 9rem;
   padding: 1rem 2rem 1rem 2rem;
   background-color: #F0F0F0;
 }
@@ -138,25 +137,6 @@ nav ul li{
   display: flex;
   flex-direction: column;
   padding-right: 1.5rem;
-}
-#team .subitem2{
-  text-align: right;
-}
-#team .memberwrapper{
-  display: flex;
-  flex-direction: row;
-}
-#team .avatar {
-  border-radius: 100%;
-  display:inline-block;
-  padding: 0.5rem;
-  background-color: #F1EBE8;
-  border: 1px solid #E3DDDA;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
-#team .avatar img {
-  border-radius: 100%;
-  display: block;
 }
 /*----- Team End ------*/
 /*------ ContactUs -------*/
@@ -188,97 +168,3 @@ nav ul li{
 
 
 /*===================== Restaurant page ======================*/
-#restaurant>.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#restaurant header{
-  margin-top: 3rem;
-}
-#restaurant .map {
-  margin: 4rem 18rem 4rem 18rem;
-  height: 1000px;
-  width: 865px;
-  background-image: url("../images/mapbg.png");
-  background-position: center;
-  background-size: contain;
-}
-#restaurant .map a {
-  position: relative;
-  color: #908589;
-}
-#restaurant .map a:nth-child(1){
-  top: 430px;
-  left: 350px;
-}
-#restaurant .map a:nth-child(2){
-  top: 890px;
-  left: 390px;
-}
-#restaurant .map a:nth-child(3){
-  top: 445px;
-  left: 298px;
-}
-#restaurant .map a:nth-child(4){
-  top: 460px;
-  left: 272px;
-}
-#restaurant .map a:nth-child(5){
-  top: 475px;
-  left: 245px;
-}
-#restaurant .map a:nth-child(6){
-  top: 850px;
-  left: 220px;
-}
-#restaurant .map a:nth-child(7){
-  top: 466px;
-  left: 195px;
-}
-#restaurant .map a:nth-child(8){
-  top:473px;
-  left: 140px;
-}
-#restaurant .map a:nth-child(9){
-  top: 725px;
-  left: 143px;
-}
-#restaurant .map a:nth-child(10){
-  top: 700px;
-  left: 120px;
-}
-#restaurant .map a:nth-child(11){
-  top: 750px;
-  left: 65px;
-}
-
-/*================== Restaurant page END ===================*/
-
-/*============== Restaurant INFO page =================*/
-
-
-#resInfo .container{
-  margin: 2rem 8rem 2rem 8rem;
-  display: flex;
-  flex-direction: column;
-}
-#resInfo .container .top{
-  margin-left: 4rem;
-}
-#resInfo .container .bottom{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-#resInfo .container .bottom .detailinfo{
-  margin-left: 2rem;
-  padding-left: 1rem;
-  padding-right: 7rem;
-  border-right: 1px dotted gray;
-}
-#resInfo .container .bottom .detailinfo>#hours{
-  margin-left: 1rem;
-}
-
-/*============ Restaurant INFO page END ===============*/
