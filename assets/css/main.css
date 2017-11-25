@@ -255,7 +255,7 @@ nav ul li{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 10rem 2rem 10rem 2rem;
+  padding: 8rem 2rem 8rem 2rem;
   margin: 1rem 7rem 3rem 7rem;
   color: #BBBBBB;
 }
@@ -446,29 +446,62 @@ nav ul li{
 /*================== Restaurant page END ===================*/
 
 /*============== Restaurant INFO page =================*/
-
-
 #resInfo .container{
-  margin: 2rem 8rem 2rem 8rem;
+  margin: 2rem 7rem 2rem 7rem;
   display: flex;
   flex-direction: column;
 }
 #resInfo .container .top{
   margin-left: 4rem;
 }
+/*gallery by using JavaScript will be placed*/
+#resInfo .images p{
+  visibility: hidden;
+}
 #resInfo .container .bottom{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #resInfo .container .bottom .detailinfo{
   margin-left: 2rem;
   padding-left: 1rem;
   padding-right: 7rem;
-  border-right: 1px dotted gray;
 }
 #resInfo .container .bottom .detailinfo>#hours{
   margin-left: 1rem;
 }
-
+.googlemap {
+  padding: 1rem 2rem 1rem 2rem;
+}
+.googlemap iframe {
+  width: 20rem;
+  height: 20rem;
+}
+@media (max-width: 1081px){
+  #resInfo .container{
+    margin: 2rem 1.5rem 2rem 1.5rem;
+  }
+  #resInfo .container .bottom .detailinfo{
+    padding-right: 0rem;
+  }
+}
+@media (max-width: 701px){
+  #resInfo .container {
+    margin: 0 0 0 0;
+  }
+  #resInfo .container .bottom{
+    flex-direction: column;
+    align-items: center;
+  }
+  #resInfo .container .bottom .detailinfo {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+  }
+}
 /*============ Restaurant INFO page END ===============*/
+
+/*Filter, Spinner, Contactus page will be implemented by using JS*/
+#filter, #spinner, #contactus .container{
+  margin: 1rem 1rem 1rem 1rem;
+}
