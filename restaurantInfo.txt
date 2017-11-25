@@ -92,14 +92,10 @@ Tue	12:00 pm - 3:00 pm
     5:00 pm - 10:30 pm
 Wed	12:00 pm - 3:00 pm
     5:00 pm - 10:30 pm
-Thu	12:00 pm - 3:00 pm
-    5:00 pm - 10:30 pm
-Fri	12:00 pm - 3:00 pm
-    5:00 pm - 11:30 pm
-Sat	12:00 pm - 4:00 pm
-    5:00 pm - 11:30 pm
-Sun	12:00 pm - 4:00 pm
-    5:00 pm - 10:30 pm
+Thu	12:00 pm - 3:00 pm / 5:00 pm - 10:30 pm
+Fri	12:00 pm - 3:00 pm / 5:00 pm - 11:30 pm
+Sat	12:00 pm - 4:00 pm / 5:00 pm - 11:30 pm
+Sun	12:00 pm - 4:00 pm / 5:00 pm - 10:30 pm
 5. delivery -Yes/ takeout -Yes
 6. karmakafe.com
 7. duck bill accept
@@ -309,16 +305,6 @@ Sun	10:30 am - 12:00 am
 6. bennytudinos.com
 7. duck bill accept
 8. Wi-fi -No
-
-<title>
-1. food kind
-2. address
-3. phone number
-4. opening hours
-5. delivery/ takeout
-6. Business website
-7. duck bill accept
-8. Wi-fi
 
 <Amanda's Restaurant>
 1. Breakfast & Brunch, American
