@@ -189,8 +189,11 @@ nav a{
   height: 1000px;
   width: 865px;
   background-image: url("../images/mapbg.png");
-  background-position: center;
-  background-size: contain;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    box-sizing:border-box;
+    border:1px solid blue;
 }
 #restaurant .map a {
   position: relative;
@@ -198,8 +201,8 @@ nav a{
 }
 #restaurant .map a:nth-child(1){
   /* pokemon bowls */
-  top: 42%;
-  left: 41%;
+  top: 40%;
+  left: 40%;
 }
 #restaurant .map a:nth-child(2){
   top: 89%;
@@ -223,8 +226,8 @@ nav a{
 }
 #restaurant .map a:nth-child(6){
 /*  yoooooo there is a surf taco here im outtie */
-  top: 850px;
-  left: 220px;
+  top: 85%;
+  left: 25%;
 }
 #restaurant .map a:nth-child(7){
   top: 47%;
@@ -232,16 +235,16 @@ nav a{
 }
 #restaurant .map a:nth-child(8){
   /* mamamamamamamama falaffel dont read these its 2:35 rn*/
-    top:47%;
-  left: 15.75%;
+  top:47%;
+  left: 14%;
 }
 #restaurant .map a:nth-child(9){
   top: 72.5%;
   left: 15.5%;
 }
 #restaurant .map a:nth-child(10){
-  top: 70%;
-  left: 13.5%;
+  top: 68%;
+  left: 11.5%;
 }
 #restaurant .map a:nth-child(11){
   top: 75%;
@@ -277,3 +280,66 @@ nav a{
 }
 
 /*============ Restaurant INFO page END ===============*/
+.icon-eye{
+    border: 1px solid black;
+}
+/* responsive design portion to make the map smaller while the page gets smaller e.g. shrinking page, using tablet, using phone */
+@media only screen and (max-width:865px){
+#restaurant .map {
+    height:600px;
+    width:500px;
+    }
+    #restaurant .map a:nth-child(1){
+  /* pokemon bowls */
+  top: 40%;
+  left: 39%;
+}
+#restaurant .map a:nth-child(2){
+  top: 89%;
+  left: 45.5%;
+}
+#restaurant .map a:nth-child(3){
+    /* are these any good i could use a cheesesteak at 2 am */
+  top: 43%;
+  left: 28%;
+}
+#restaurant .map a:nth-child(4){
+    /* this place is the goat btw if u dont know what im doing im pretty much just changing the values from px to % so it can scale across
+    a changing size */
+  top: 44.5%;
+  left: 23%;
+}
+#restaurant .map a:nth-child(5){
+    /* karmas a bitch */
+  top: 46.5%;
+  left: 17%;
+}
+#restaurant .map a:nth-child(6){
+/*  yoooooo there is a surf taco here im outtie */
+ top: 85%;
+  left: 25%;
+}
+#restaurant .map a:nth-child(7){
+  top: 45.5%;
+  left: 5.5%;
+}
+#restaurant .map a:nth-child(8){
+  /* mamamamamamamama falaffel dont read these its 2:35 rn*/
+  top:46%;
+  left: -5%;
+}
+#restaurant .map a:nth-child(9){
+  top: 72.5%;
+  left: 15.5%;
+}
+#restaurant .map a:nth-child(10){
+    /* quality greens */
+  top: 67%;
+  left: -12%;
+}
+#restaurant .map a:nth-child(11){
+  top: 75%;
+  left: 7%;
+}
+
+}
