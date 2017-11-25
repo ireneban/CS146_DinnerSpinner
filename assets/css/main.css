@@ -400,6 +400,7 @@ nav ul li{
 #restaurant .map a:nth-child(17){
   top: 34.5%;
   left: -11.5%;
+<<<<<<< HEAD
   
 }
 #restaurant .map a:nth-child(18){
@@ -450,6 +451,20 @@ nav ul li{
 #restaurant .map a:nth-child(29){
   top: 53%;
   left: -48%;
+=======
+}
+#restaurant .map a:nth-child(18){
+  top: 10%;
+  left: -15%;
+}
+#restaurant .map a:nth-child(19){
+  top: 25%;
+  left: -18%;
+}
+#restaurant .map a:nth-child(20){
+  top: 43%;
+  left: -18%;
+>>>>>>> 936938c19318847e1242d5800511ab0497a8f016
 }
 @media only screen and (max-width:865px){
   #restaurant .map {
@@ -520,6 +535,7 @@ nav ul li{
     top: 32%;
     left: -44%;
   }
+<<<<<<< HEAD
 
 #restaurant .map a:nth-child(17){
   top: 34%;
@@ -578,6 +594,24 @@ nav ul li{
   top: 49%;
   left: -12%;
 }
+=======
+  #restaurant .map a:nth-child(17){
+    top: 34.5%;
+    left: -48%;
+  }
+  #restaurant .map a:nth-child(18){
+    top: 10%;
+    left: -55%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 25%;
+    left: -60%;
+  }
+  #restaurant .map a:nth-child(20){
+    top: 38%;
+    left: 39%;
+  }
+>>>>>>> 936938c19318847e1242d5800511ab0497a8f016
 }
 @media only screen and (max-width:600px){
 
@@ -649,6 +683,7 @@ nav ul li{
     top: 26%;
     left: -3%;
   }
+<<<<<<< HEAD
     #restaurant .map a:nth-child(17){
   top: 28%;
     left: -12%;
@@ -702,6 +737,24 @@ nav ul li{
   top: 42%;
   left: -20%;
 }
+=======
+  #restaurant .map a:nth-child(17){
+    top: 30.5%;
+    left: -11%;
+  }
+  #restaurant .map a:nth-child(18){
+    top: 5%;
+    left: -19%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 20%;
+    left: -20%;
+  }
+  #restaurant .map a:nth-child(20){
+    top: 38%;
+    left: -32%;
+  }
+>>>>>>> 936938c19318847e1242d5800511ab0497a8f016
 }
 /*================== Restaurant page END ===================*/
 
