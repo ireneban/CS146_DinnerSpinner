@@ -274,3 +274,20 @@ nav ul li{
 }
 
 /*============ Restaurant INFO page END ===============*/
+
+
+
+
+
+/*---------------- Responsive Design -------------------*/
+/*Desktop view*/
+
+/*Tablet view*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024ox){
+  
+}
+
+/*Mobile view*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+}
