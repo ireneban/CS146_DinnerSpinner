@@ -280,9 +280,7 @@ nav a{
 }
 
 /*============ Restaurant INFO page END ===============*/
-.icon-eye{
-    border: 1px solid black;
-}
+
 /* responsive design portion to make the map smaller while the page gets smaller e.g. shrinking page, using tablet, using phone */
 @media only screen and (max-width:865px){
 #restaurant .map {
@@ -316,12 +314,13 @@ nav a{
 }
 #restaurant .map a:nth-child(6){
 /*  yoooooo there is a surf taco here im outtie */
- top: 85%;
-  left: 25%;
+ top: 84%;
+  left: 11%;
 }
 #restaurant .map a:nth-child(7){
+    /* bareburger is also hella good but shomney */
   top: 45.5%;
-  left: 5.5%;
+  left: 6.5%;
 }
 #restaurant .map a:nth-child(8){
   /* mamamamamamamama falaffel dont read these its 2:35 rn*/
@@ -329,8 +328,9 @@ nav a{
   left: -5%;
 }
 #restaurant .map a:nth-child(9){
-  top: 72.5%;
-  left: 15.5%;
+    /* koro koro*/
+  top: 71%;
+  left: -7%;
 }
 #restaurant .map a:nth-child(10){
     /* quality greens */
@@ -338,8 +338,71 @@ nav a{
   left: -12%;
 }
 #restaurant .map a:nth-child(11){
-  top: 75%;
-  left: 7%;
+    /* honeygrow */
+  top: 74%;
+  left: -19%;
 }
 
+}
+@media only screen and (max-width:600px){
+#restaurant .map {
+    height:400px;
+    width:300px;
+    }
+#restaurant .map a:nth-child(1){
+  /* pokemon bowls */
+  top: 40%;
+  left: 36%;
+}
+#restaurant .map a:nth-child(2){
+    /* gogi grill */
+  top: 87%;
+  left: 35%;
+}
+#restaurant .map a:nth-child(3){
+    /* are these any good i could use a cheesesteak at 2 am */
+  top: 42%;
+  left: 18.5%;
+}
+#restaurant .map a:nth-child(4){
+    /* flatbread this place is the goat btw if u dont know what im doing im pretty much just changing the values from px to % so it can scale across
+    a changing size */
+  top: 43%;
+  left: 6.5%;
+}
+#restaurant .map a:nth-child(5){
+    /* karmas a bitch */
+  top: 45.5%;
+  left: -1%;
+}
+#restaurant .map a:nth-child(6){
+/*  yoooooo there is a surf taco here im outtie */
+  top: 83%;
+  left: -10%;
+}
+#restaurant .map a:nth-child(7){
+    /* bareburger */
+  top: 44%;
+  left: -20%;
+}
+#restaurant .map a:nth-child(8){
+  /* mamamamamamamama falaffel dont read these its 2:35 rn*/
+  top:45%;
+  left: -35%;
+}
+#restaurant .map a:nth-child(9){
+    /* koro koro */
+  top: 69.5%;
+  left: -40%;
+}
+#restaurant .map a:nth-child(10){
+    /* quality greens */
+  top: 66%;
+  left: -50%;
+}
+#restaurant .map a:nth-child(11){
+    /* honeygrow */
+  top: 67%;
+  left: 36%;
+}
 }
