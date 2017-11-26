@@ -261,6 +261,7 @@ nav ul li{
   padding: 8rem 2rem 8rem 2rem;
   margin: 1rem 7rem 3rem 7rem;
   color: #BBBBBB;
+  text-transform: uppercase;
 }
 @media (max-width: 832px){
   #contact {
@@ -330,7 +331,7 @@ nav ul li{
 }
 #restaurant .map a {
   position: relative;
-  color: #908589;
+  color: #5F5D5C;
 }
 #restaurant .map a:nth-child(1){
   top: 40%;
