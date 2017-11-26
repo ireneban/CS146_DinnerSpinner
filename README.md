@@ -10,6 +10,7 @@ Team3
 4. On each restaurant info page, gallery  will added by using JavaScript.
 5. No template for CSS was used on this website. 
 6. Responsive design was added. 
+7. each restaurant info page CSS needs to be fixed. 
 
 Last Update: Nov 25, 2017. Mijeong Ban
  
