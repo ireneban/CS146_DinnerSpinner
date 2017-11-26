@@ -50,6 +50,20 @@ input:hover{
 .active{
   color: gray;
 }
+button{
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #BBBBBB;
+    border-radius: 1.3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100%;
+    color: #6C6C6C;
+}
+button:hover{
+  cursor: pointer;
+  color: white;
+}
 /*----------- Header -------------*/
 header, nav ul {
   display:flex;
@@ -333,6 +347,9 @@ nav ul li{
   position: relative;
   color: #5F5D5C;
 }
+#restaurant .map a:hover {
+  border-bottom: none;
+}
 #restaurant .map a:nth-child(1){
   top: 40%;
   left: 40%;
@@ -400,14 +417,11 @@ nav ul li{
 #restaurant .map a:nth-child(17){
   top: 34.5%;
   left: -11.5%;
-
-  
 }
 #restaurant .map a:nth-child(18){
   top: 9.5%;
   left: -15%;
 }
-
 #restaurant .map a:nth-child(19){
   top: 23%;
   left: -17.5%;
@@ -420,23 +434,23 @@ nav ul li{
   top: 20%;
   left: -23%;
 }
-          #restaurant .map a:nth-child(22){
+#restaurant .map a:nth-child(22){
     top: 50%;
     left: -24%;
   }
-    #restaurant .map a:nth-child(23){
+#restaurant .map a:nth-child(23){
   top: 2%;
   left:-30%;
 }
-        #restaurant .map a:nth-child(24){
+#restaurant .map a:nth-child(24){
   top: 44%;
   left:-30%;
 }
-            #restaurant .map a:nth-child(25){
+#restaurant .map a:nth-child(25){
   top: 41%;
   left:-36%;
 }
-                    #restaurant .map a:nth-child(26){
+#restaurant .map a:nth-child(26){
   top: 38%;
   left:-36%;
 }
@@ -451,21 +465,8 @@ nav ul li{
 #restaurant .map a:nth-child(29){
   top: 53%;
   left: -48%;
-=======
 }
-#restaurant .map a:nth-child(18){
-  top: 10%;
-  left: -15%;
-}
-#restaurant .map a:nth-child(19){
-  top: 25%;
-  left: -18%;
-}
-#restaurant .map a:nth-child(20){
-  top: 43%;
-  left: -18%;
->>>>>>> 936938c19318847e1242d5800511ab0497a8f016
-}
+
 @media only screen and (max-width:865px){
   #restaurant .map {
     height:600px;
@@ -535,86 +536,64 @@ nav ul li{
     top: 32%;
     left: -44%;
   }
-
-
-#restaurant .map a:nth-child(17){
-  top: 34%;
-  left:-48%;
-  
-}
-#restaurant .map a:nth-child(18){
-  top: 9.5%;
-  left: -54%;
-}
-#restaurant .map a:nth-child(19){
-  top: 22%;
-  left: -59%;
-}
-      #restaurant .map a:nth-child(20){
+  #restaurant .map a:nth-child(17){
+    top: 34%;
+    left:-48%;
+  }
+  #restaurant .map a:nth-child(18){
+    top: 9.5%;
+    left: -54%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 22%;
+    left: -59%;
+  }
+  #restaurant .map a:nth-child(20){
     top: 38.5%;
     left: 40%;
   }
-          #restaurant .map a:nth-child(21){
+  #restaurant .map a:nth-child(21){
     top: 15%;
     left: 30%;
   }
-              #restaurant .map a:nth-child(22){
+  #restaurant .map a:nth-child(22){
     top: 47%;
     left: 29%;
   }
-        #restaurant .map a:nth-child(23){
-  top: -2%;
-  left:20%;
-}
-            #restaurant .map a:nth-child(24){
-  top: 39%;
-  left:18%;
-}
-                #restaurant .map a:nth-child(25){
-  top: 38%;
-  left:9%;
-}
-                        #restaurant .map a:nth-child(26){
-  top: 34%;
-  left:8%;
-}
-#restaurant .map a:nth-child(27){
-  top: 41.5%;
-  left: -2%;
-}
-#restaurant .map a:nth-child(28){
-  top: 53%;
-  left: -12%;
-}
-#restaurant .map a:nth-child(28){
-  top: 53%;
-  left: -12%;
-}
-#restaurant .map a:nth-child(29){
-  top: 49%;
-  left: -12%;
-}
-=======
-  #restaurant .map a:nth-child(17){
-    top: 34.5%;
-    left: -48%;
+  #restaurant .map a:nth-child(23){
+    top: -2%;
+    left:20%;
   }
-  #restaurant .map a:nth-child(18){
-    top: 10%;
-    left: -55%;
+  #restaurant .map a:nth-child(24){
+    top: 39%;
+    left:18%;
   }
-  #restaurant .map a:nth-child(19){
-    top: 25%;
-    left: -60%;
-  }
-  #restaurant .map a:nth-child(20){
+  #restaurant .map a:nth-child(25){
     top: 38%;
-    left: 39%;
+    left:9%;
   }
->>>>>>> 936938c19318847e1242d5800511ab0497a8f016
+  #restaurant .map a:nth-child(26){
+    top: 34%;
+    left:8%;
+  }
+  #restaurant .map a:nth-child(27){
+    top: 41.5%;
+    left: -2%;
+  }
+  #restaurant .map a:nth-child(28){
+    top: 53%;
+    left: -12%;
+  }
+  #restaurant .map a:nth-child(28){
+    top: 53%;
+    left: -12%;
+  }
+  #restaurant .map a:nth-child(29){
+    top: 49%;
+    left: -12%;
+  }
 }
 @media only screen and (max-width:600px){
-
     #restaurant .map {
     height:400px;
     width:300px;
@@ -683,78 +662,58 @@ nav ul li{
     top: 26%;
     left: -3%;
   }
-
-    #restaurant .map a:nth-child(17){
-  top: 28%;
+  #restaurant .map a:nth-child(17){
+    top: 28%;
     left: -12%;
-}
-    #restaurant .map a:nth-child(18){
-  top: 2%;
-  left:-20%;
-}
-#restaurant .map a:nth-child(19){
-  top: 19%;
-  left: -28.5%;
-}
-      #restaurant .map a:nth-child(20){
+  }
+  #restaurant .map a:nth-child(18){
+    top: 2%;
+    left:-20%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 19%;
+    left: -28.5%;
+  }
+  #restaurant .map a:nth-child(20){
     top: 37%;
     left: -33%;
   }
-          #restaurant .map a:nth-child(21){
+  #restaurant .map a:nth-child(21){
     top: 13%;
     left: -47%;
   }
-              #restaurant .map a:nth-child(22){
+  #restaurant .map a:nth-child(22){
     top: 44%;
     left: -52%;
   }
-        #restaurant .map a:nth-child(23){
-  top: -8%;
-  left:33%;
-}
-            #restaurant .map a:nth-child(24){
-   top: 35.5%;
-  left:29%;
-
-}
-                #restaurant .map a:nth-child(25){
-  top: 30%;
-  left:15%;
-}
-                    #restaurant .map a:nth-child(26){
-  top: 27%;
-  left:11%;
-}
-#restaurant .map a:nth-child(27){
-  top: 36%;
-  left: -2%;
-}
-#restaurant .map a:nth-child(28){
-  top: 47%;
-  left: -18%;
-}
-#restaurant .map a:nth-child(29){
-  top: 42%;
-  left: -20%;
-}
-
-  #restaurant .map a:nth-child(17){
-    top: 30.5%;
-    left: -11%;
+  #restaurant .map a:nth-child(23){
+    top: -8%;
+    left:33%;
   }
-  #restaurant .map a:nth-child(18){
-    top: 5%;
-    left: -19%;
+  #restaurant .map a:nth-child(24){
+    top: 35.5%;
+    left:29%;
   }
-  #restaurant .map a:nth-child(19){
-    top: 20%;
+  #restaurant .map a:nth-child(25){
+    top: 30%;
+    left:15%;
+  }
+  #restaurant .map a:nth-child(26){
+    top: 27%;
+    left:11%;
+  }
+  #restaurant .map a:nth-child(27){
+    top: 36%;
+    left: -2%;
+  }
+  #restaurant .map a:nth-child(28){
+    top: 47%;
+    left: -18%;
+  }
+  #restaurant .map a:nth-child(29){
+    top: 42%;
     left: -20%;
   }
-  #restaurant .map a:nth-child(20){
-    top: 38%;
-    left: -32%;
-  }
-
 }
 /*================== Restaurant page END ===================*/
 
@@ -778,7 +737,7 @@ nav ul li{
 }
 #resInfo .container .bottom .detailinfo{
   margin-left: 2rem;
-  padding-left: 1rem;
+  padding-left: 2rem;
   padding-right: 7rem;
 }
 #resInfo .container .bottom .detailinfo>#hours{
@@ -798,6 +757,11 @@ nav ul li{
   #resInfo .container .bottom .detailinfo{
     padding-right: 0rem;
   }
+  #resInfo .container .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 @media (max-width: 701px){
   #resInfo .container {
@@ -812,9 +776,30 @@ nav ul li{
     padding: 0 0 0 0;
   }
 }
+
 /*============ Restaurant INFO page END ===============*/
 
 /*Filter, Spinner, Contactus page will be implemented by using JS*/
-#filter, #spinner, #contactus .container{
+#filter,  #contactus .container{
   margin: 1rem 1rem 1rem 1rem;
+}
+#spinner .container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height:40%;
+    width:30%;
+    margin-left:30%;
+
+}
+#spinnerimg{
+    height:100%;
+    width:100%;
+    margin-bottom:1%;
+}
+@media only screen and (max-width:1468px){
+    #spinnerimg{
+    height:150%;
+    width:150%;
+}
 }
