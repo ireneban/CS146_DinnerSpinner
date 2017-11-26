@@ -700,13 +700,10 @@ nav ul li{
     top: 42%;
     left: -20%;
   }
+}
 /*================== Restaurant page END ===================*/
 
 /*============== Restaurant INFO page =================*/
-#resInfo>.container {
-  border: 1px solid red;
-}
-
 #resInfo .container{
   margin: 2rem 7rem 2rem 7rem;
   display: flex;
