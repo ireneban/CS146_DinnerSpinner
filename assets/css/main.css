@@ -401,7 +401,7 @@ nav ul li{
   top: 34.5%;
   left: -11.5%;
 <<<<<<< HEAD
-  
+
 }
 #restaurant .map a:nth-child(18){
   top: 9.5%;
@@ -465,6 +465,10 @@ nav ul li{
   top: 43%;
   left: -18%;
 >>>>>>> 936938c19318847e1242d5800511ab0497a8f016
+}
+#restaurant .map a:nth-child(21){
+  top: 20%;
+  left: -23%;
 }
 @media only screen and (max-width:865px){
   #restaurant .map {
@@ -540,7 +544,7 @@ nav ul li{
 #restaurant .map a:nth-child(17){
   top: 34%;
   left:-48%;
-  
+
 }
 #restaurant .map a:nth-child(18){
   top: 9.5%;
