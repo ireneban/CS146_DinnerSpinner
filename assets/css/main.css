@@ -400,7 +400,14 @@ nav ul li{
 #restaurant .map a:nth-child(17){
   top: 34.5%;
   left: -11.5%;
-  border: 1px solid red;
+}
+#restaurant .map a:nth-child(18){
+  top: 10%;
+  left: -15%;
+}
+#restaurant .map a:nth-child(19){
+  top: 25%;
+  left: -18%;
 }
 @media only screen and (max-width:865px){
   #restaurant .map {
@@ -471,6 +478,18 @@ nav ul li{
     top: 32%;
     left: -44%;
   }
+  #restaurant .map a:nth-child(17){
+    top: 34.5%;
+    left: -48%;
+  }
+  #restaurant .map a:nth-child(18){
+    top: 10%;
+    left: -55%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 25%;
+    left: -60%;
+  }
 }
 @media only screen and (max-width:600px){
   #restaurant .map {
@@ -540,6 +559,18 @@ nav ul li{
   #restaurant .map a:nth-child(16){
     top: 28%;
     left: -3%;
+  }
+  #restaurant .map a:nth-child(17){
+    top: 30.5%;
+    left: -11%;
+  }
+  #restaurant .map a:nth-child(18){
+    top: 5%;
+    left: -19%;
+  }
+  #restaurant .map a:nth-child(19){
+    top: 20%;
+    left: -20%;
   }
 }
 /*================== Restaurant page END ===================*/
