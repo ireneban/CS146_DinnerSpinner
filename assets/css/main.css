@@ -333,6 +333,9 @@ nav ul li{
   position: relative;
   color: #5F5D5C;
 }
+#restaurant .map a:hover {
+  border-bottom: none;
+}
 #restaurant .map a:nth-child(1){
   top: 40%;
   left: 40%;
@@ -400,14 +403,11 @@ nav ul li{
 #restaurant .map a:nth-child(17){
   top: 34.5%;
   left: -11.5%;
-<<<<<<< HEAD
-
 }
 #restaurant .map a:nth-child(18){
   top: 9.5%;
   left: -15%;
 }
-
 #restaurant .map a:nth-child(19){
   top: 23%;
   left: -17.5%;
@@ -420,59 +420,10 @@ nav ul li{
   top: 20%;
   left: -23%;
 }
-          #restaurant .map a:nth-child(22){
+#restaurant .map a:nth-child(22){
     top: 50%;
     left: -24%;
   }
-    #restaurant .map a:nth-child(23){
-  top: 2%;
-  left:-30%;
-}
-        #restaurant .map a:nth-child(24){
-  top: 44%;
-  left:-30%;
-}
-            #restaurant .map a:nth-child(25){
-  top: 41%;
-  left:-36%;
-}
-                    #restaurant .map a:nth-child(26){
-  top: 38%;
-  left:-36%;
-}
-#restaurant .map a:nth-child(27){
-  top: 45%;
-  left: -42%;
-}
-#restaurant .map a:nth-child(28){
-  top: 57%;
-  left: -50%;
-}
-#restaurant .map a:nth-child(29){
-  top: 53%;
-  left: -48%;
-=======
-}
-#restaurant .map a:nth-child(18){
-  top: 10%;
-  left: -15%;
-}
-#restaurant .map a:nth-child(19){
-  top: 25%;
-  left: -18%;
-}
-#restaurant .map a:nth-child(20){
-  top: 43%;
-  left: -18%;
-}
-#restaurant .map a:nth-child(21){
-  top: 20%;
-  left: -23%;
-}
-#restaurant .map a:nth-child(22){
-  top: 50%;
-  left: -24%;
-}
 #restaurant .map a:nth-child(23){
   top: 2%;
   left:-30%;
@@ -501,6 +452,7 @@ nav ul li{
   top: 53%;
   left: -48%;
 }
+
 @media only screen and (max-width:865px){
   #restaurant .map {
     height:600px;
@@ -628,7 +580,6 @@ nav ul li{
   }
 }
 @media only screen and (max-width:600px){
-
     #restaurant .map {
     height:400px;
     width:300px;
@@ -752,6 +703,10 @@ nav ul li{
 /*================== Restaurant page END ===================*/
 
 /*============== Restaurant INFO page =================*/
+#resInfo>.container {
+  border: 1px solid red;
+}
+
 #resInfo .container{
   margin: 2rem 7rem 2rem 7rem;
   display: flex;
@@ -791,6 +746,11 @@ nav ul li{
   #resInfo .container .bottom .detailinfo{
     padding-right: 0rem;
   }
+  #resInfo .container .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 @media (max-width: 701px){
   #resInfo .container {
@@ -805,6 +765,7 @@ nav ul li{
     padding: 0 0 0 0;
   }
 }
+
 /*============ Restaurant INFO page END ===============*/
 
 /*Filter, Spinner, Contactus page will be implemented by using JS*/
