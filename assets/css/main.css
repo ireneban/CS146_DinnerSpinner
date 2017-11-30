@@ -22,7 +22,7 @@ body{
   flex-direction: column;
   margin: 0rem 0rem 0rem
 }
-h2, h3, h4, p, input{
+h2, h3, h4, p, input, figcaption{
   font-family: 'Raleway', sans-serif;
 }
 h2{
@@ -45,7 +45,7 @@ input{
 }
 input:hover{
   cursor: pointer;
-  color: white;
+  color: lightgray;
 }
 .active{
   color: gray;
@@ -741,9 +741,52 @@ nav ul li{
 #resInfo .container .top{
   margin-left: 4rem;
 }
-/*gallery by using JavaScript will be placed*/
-#resInfo .images p{
-  visibility: hidden;
+#resInfo .container .top .gallery>h4{
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 2rem;
+  color:#484848;
+}
+.gallery {
+  padding: 1rem;
+  border-bottom: 1px dotted lightgray;
+}
+.photo-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+#main_fig{
+  margin: 0 0 0 0;
+  border: 1px solid white;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: #F4F4F4;
+}
+#main_fig figcaption{
+  position: absolute;
+  top: 720px;
+  height: 100px;
+  width: 500px;
+  background-color: #CDCDCD;
+  font-size: 150%;
+  text-align: center;
+  display: block;
+  padding-top: 25px;
+  opacity: 0;
+}
+#img_list {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: #F4F4F4;
+}
+#img_list img{
+  margin: 0 0 0 0;
 }
 #resInfo .container .bottom{
   display: flex;
