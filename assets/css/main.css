@@ -348,6 +348,12 @@ nav ul li{
 #restaurant header{
   margin-top: 3rem;
 }
+#restaurant .pick{
+  border: 1px solid #F4F4F4;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  background-color: #F4F4F4;
+  margin-top: 2rem;
+}
 #restaurant .map {
   margin: 4rem 18rem 4rem 18rem;
   height: 1000px;
