@@ -39,12 +39,34 @@
     <!-- Content -->
     <section id="contactus">
       <div class="container">
-        <article>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consectetur vel dicta, similique cumque doloremque ipsam error delectus mollitia! Aliquid, atque, quod blanditiis dolore odit, libero necessitatibus eveniet laudantium minima rem veritatis quo corporis suscipit nostrum ipsum animi quas facere iste magnam nesciunt impedit quasi, officiis deleniti. Eaque iste dicta dolore numquam commodi at quaerat consectetur perferendis iusto tempora sequi placeat necessitatibus aliquam, molestiae alias odit maxime nihil illo ab reprehenderit, suscipit illum adipisci. Architecto modi, voluptate ipsam quia quaerat provident sapiente quos esse quis! Aliquam dolore, sed nemo temporibus expedita maiores tempore maxime ratione molestias officia odio aspernatur non!
-        </article>
+        <div class="comments">
+          <header>
+            <h2>comment</h2>
+          </header>
+          <section class="commentpost-wrapper">
+            <form class="comment-wrapper" onsubmit="getinput(); return false;">
+              <span class="username">
+                <label for="username">username</label>
+                <br />
+                <input type="text" name="username" id="username" placeholder="Enter your username" required pattern="[a-zA-Z][a-zA-Z'\- ]*" maxlength="10" title="insert your username.">
+              </span>
+              <br />
+              <span class="commentbox">
+                <label for="commenting">leave your comments</label>
+                <br />
+                <textarea name="commenting" id="commenting" placeholder="leave your comments!"></textarea>
+              </span>
+              <br />
+              <button id="submit">submit</button>
+            </form>
+            <div id="post-wrapper">
+            </div>
+        </section>
+
+        </div>
       </div>
     </section>
-    
+
 
     <!-- Footer -->
     <footer id="footer">
@@ -57,5 +79,6 @@
         </ul>
         <p>Copyright &copy; 2017 Dinner Spinner</p>
     </footer>
+    <script type="text/javascript" src="assets/js/comments.js"></script>
   </body>
 </html>
