@@ -1,0 +1,28 @@
+
+things to put for presentation
+
+1. general intro for website
+2. Index page
+	1) nav bar and banner -- responsive design 
+	2) explain about get started button
+	3) explain about team member section -- responsive design
+	4) get in touch button --> contact us page 
+	5) footer -- icons --connects to github
+3. Restaurant page 
+	1) explain about two option to choose (drop down, map) -- responsive design
+	2) dropdown --> JS --> connect to new window (each restaurant page)
+	3) map --> only html link --not new window 
+4. EACH restaurant page 
+	1) explain about photos (JS) mouseover, caption 
+	2) informations
+	3) embedded google map so that we can check direction
+5. filter system
+	
+6. spinner 
+	1) JS
+7. contact us 
+	1) JS like we do for individual assignment 
+	2) responsive design
+
+
+ ******put general introduction on welcome section on index.html  
