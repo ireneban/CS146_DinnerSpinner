@@ -5,13 +5,6 @@ function getinput() {
   addNewComments(username, comments);
 }
 
-/*
-<div class="post">
-  <span>username</span>
-  <span id = "cover">comments</span>
-</div>
-*/
-
 function addNewComments(username, comment){
   var post = document.createElement("div");
   post.className = "post";
