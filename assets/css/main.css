@@ -844,7 +844,7 @@ nav ul li{
 /*============ Restaurant INFO page END ===============*/
 /*============== ContactUs page =================*/
 #contactus header{
-  margin-left: 4rem;
+  justify-content: center;
 }
 #contactus .commentpost-wrapper{
   display: flex;
@@ -889,4 +889,23 @@ nav ul li{
 }
 #contactus .post span:nth-child(2){
   padding: 1rem 0 1rem 1rem;
+}
+@media only screen and (max-width:650px){
+  #contactus .commentpost-wrapper{
+    flex-direction: column;
+  }
+  #contactus .comment-wrapper{
+    padding-left: 2rem;
+  }
+  #contactus #commenting {
+    width: 20rem;
+    height: 8rem;
+  }
+  #contactus #submit{
+    margin: 1rem 2rem 2rem 6rem;
+  }
+  #contactus .post{
+    margin: 2rem 2rem 2rem 2rem;
+    width: 19rem;
+  }
 }
