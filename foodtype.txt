@@ -1,0 +1,15 @@
+Seafood
+Vegetarian
+Fast Food
+Asian
+Medetterian
+Salad
+Cuban
+Sandwiches
+Coffee
+Tea
+Breakfast
+Italian
+Pizza
+Burgers
+Mexican
