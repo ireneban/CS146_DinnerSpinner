@@ -1,3 +1,7 @@
+/*--CS146: Final Project: JavaScript
+----Team3: Mijeong Ban, Ian Gomez, Dana McGuire, Caroline Rubino, Luke Bukowiec
+----I pledge my honor that I have abided by the Stevens Honor System. */
+
 window.addEventListener("load", function(){
 
   var list = document.getElementById("img_list");

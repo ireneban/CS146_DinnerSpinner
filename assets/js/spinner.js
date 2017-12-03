@@ -1,3 +1,7 @@
+/*--CS146: Final Project: JavaScript
+----Team3: Mijeong Ban, Ian Gomez, Dana McGuire, Caroline Rubino, Luke Bukowiec
+----I pledge my honor that I have abided by the Stevens Honor System. */
+
 function spinnerFunc() {
     // Code for Safari
     random_num = Math.random() * 360
