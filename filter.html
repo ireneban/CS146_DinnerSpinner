@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/fontello-9968a741/css/fontello.css">
     <!--Font Family-->
   <link href="https://fonts.googleapis.com/css?family=Mukta+Malar|Raleway|Spectral+SC" rel="stylesheet">
+  <script src = "assets/js/filter.js"></script>
   </head>
   <body>
     <div id="bg-wrapper">
@@ -40,62 +41,69 @@
     <section id="filter">
       <div class="container">
         
-          <form>
+          <form id = "filter_form" onsubmit = "suggestions(); return false;">
             <label>
-              <input name = "rest_types" type = "checkbox"> Asian
+              <input name="rest_types" type = "checkbox" value = "American"> American
             </label>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Breakfast
+              <input name = "rest_types" type = "checkbox" value = "Asian"> Asian
             </label>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Burgers
+              <input name = "rest_types"  type = "checkbox" value = "Breakfast"> Breakfast
             </label>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Coffee
-            </label>
-            <label>
-              <input  name = "rest_types" type = "checkbox"> Cuban
+              <input name = "rest_types"  type = "checkbox" value = "Burgers"> Burgers
             </label>
             <br>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Fast Food
+              <input name = "rest_types"  type = "checkbox" value = "Coffee"> Coffee
+            </label>
+            <label>
+              <input  name = "rest_types" type = "checkbox" value = "Cuban"> Cuban
             </label>
             
             <label>
-              <input name = "rest_types"  type = "checkbox"> Italian
+              <input name = "rest_types"  type = "checkbox" value = "Fast_Food"> Fast Food
             </label>
+            
             <label>
-              <input name = "rest_types"  type = "checkbox"> Medetterian
-            </label>
-            <label>
-              <input name = "rest_types"  type = "checkbox"> Mexican
-            </label>
-            <label>
-              <input name = "rest_types"  type = "checkbox"> Pizza
+              <input name = "rest_types"  type = "checkbox" value = "Italian"> Italian
             </label>
             <br>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Salad
+              <input name = "rest_types"  type = "checkbox" value = "Mediterranean"> Mediterranean
             </label>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Sandwiches
+              <input name = "rest_types"  type = "checkbox" value = "Mexican"> Mexican
             </label>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Seafood
+              <input name = "rest_types"  type = "checkbox" value = "Pizza"> Pizza
             </label>
             <label>
-              <input name = "rest_types"  type = "checkbox"> Tea
-            </label>
-            <label>
-              <input name = "rest_types"  type = "checkbox"> Vegetarian
+              <input name = "rest_types"  type = "checkbox" value = "Salad"> Salad
             </label>
             <br>
-              <input type = "submit" value= "submit">
+            <label>
+              <input name = "rest_types"  type = "checkbox" value = "Sandwiches"> Sandwiches
+            </label>
+            <label>
+              <input name = "rest_types"  type = "checkbox" value = "Seafood"> Seafood
+            </label>
+            <label>
+              <input name = "rest_types"  type = "checkbox" value = "Tea"> Tea
+            </label>
+            <label>
+              <input name = "rest_types"  type = "checkbox" value = "Vegetarian"> Vegetarian
+            </label>
+            <br>
+
+              <input type = "submit" value = "Submit">
               <input type = "reset" value = "reset">
             
           </form>
         </article>
       </div>
+      <div id = "recc_lst">
     </section>
 
     <!-- Footer -->
