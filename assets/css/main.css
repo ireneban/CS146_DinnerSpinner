@@ -933,7 +933,6 @@ nav ul li{
 #spinner .container{
     margin: 1rem 1rem 1rem 1rem;
     padding-bottom: 3rem;
-    border: 1px solid black;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
