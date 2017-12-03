@@ -39,10 +39,32 @@
     <!-- Content -->
     <section id="filter">
       <div class="container">
-        <article>
-          <!--- This part will be implemented by using JavaScript later --->
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos consectetur vel dicta, similique cumque doloremque ipsam error delectus mollitia! Aliquid, atque, quod blanditiis dolore odit, libero necessitatibus eveniet laudantium minima rem veritatis quo corporis suscipit nostrum ipsum animi quas facere iste magnam nesciunt impedit quasi, officiis deleniti. Eaque iste dicta dolore numquam commodi at quaerat consectetur perferendis iusto tempora sequi placeat necessitatibus aliquam, molestiae alias odit maxime nihil illo ab reprehenderit, suscipit illum adipisci. Architecto modi, voluptate ipsam quia quaerat provident sapiente quos esse quis! Aliquam dolore, sed nemo temporibus expedita maiores tempore maxime ratione molestias officia odio aspernatur non!
-        </article>
+        <form id = "filter_form" onsubmit = "suggestions(); return false;">
+          <label><input name="rest_types" type = "checkbox" value = "American"> American</label>
+          <label><input name = "rest_types" type = "checkbox" value = "Asian"> Asian</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Breakfast"> Breakfast</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Burgers"> Burgers</label>
+          <br>
+          <label><input name = "rest_types"  type = "checkbox" value = "Coffee"> Coffee</label>
+          <label><input  name = "rest_types" type = "checkbox" value = "Cuban"> Cuban</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Fast_Food"> Fast Food</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Italian"> Italian</label>
+          <br>
+          <label><input name = "rest_types"  type = "checkbox" value = "Mediterranean"> Mediterranean</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Mexican"> Mexican</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Pizza"> Pizza</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Salad"> Salad</label>
+          <br>
+          <label><input name = "rest_types"  type = "checkbox" value = "Sandwiches"> Sandwiches</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Seafood"> Seafood</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Tea"> Tea</label>
+          <label><input name = "rest_types"  type = "checkbox" value = "Vegetarian"> Vegetarian</label>
+          <br>
+          <input id="button" type="submit" value="Submit">
+          <input id="button" type = "reset" value = "reset">
+        </form>
+      </div>
+      <div id = "recc_lst">
       </div>
     </section>
 
@@ -57,5 +79,6 @@
         </ul>
         <p>Copyright &copy; 2017 Dinner Spinner</p>
     </footer>
+    <script src = "assets/js/filter.js"></script>
   </body>
 </html>
